@@ -1,0 +1,58 @@
+.modal_wrapper { display: flex;
+background-image: url('https://st.depositphotos.com/1470939/1877/i/600/depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+position: fixed;
+width: 100%;
+height: 100%;
+top:0;
+left: 0;
+
+}
+
+.modal_wrapper.open {
+height: 100%;
+display: block;
+} 
+
+.modal_wrapper.close {
+display: none;
+}
+
+.modal_login  {display: flex;
+color: #fff;
+font-size: 25px;
+font-family: 'Poppins', 'sans-serif';
+justify-content: center;
+margin-top: 10%;}
+
+.form {display: flex;
+max-width: 800px;}
+
+.form-control {
+padding: 5px;
+border: none;
+border-radius: 40px;
+margin-bottom: 10px;
+margin-top: 10px;
+display: flex;
+justify-content: center;
+width: 400px;
+height: 35px;
+}
+
+.btn {width: 100px;
+height: 35px;
+border-radius: 40px;
+text-align: center;
+color: #000;
+vertical-align: middle;
+font-size: 20px;
+cursor: pointer;
+background-color: #fff;
+}
+
+.btn:hover {
+transition: all 0.3s;
+opacity: .5;
+}
