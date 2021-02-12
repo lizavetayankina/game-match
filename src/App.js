@@ -5,6 +5,7 @@ import '../src/styles/App.css';
 import Board from './component/Board';
 
 
+
 function App() {
   return (
   <div className="wrapper"> 
