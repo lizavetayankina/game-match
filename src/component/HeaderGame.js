@@ -14,9 +14,6 @@ export default function HeaderGame () {
                 <button className='btnGame'>Media</button>
                 <button className='btnGame'>Hard</button>
                 <a href="#" className="navGame-link link" onClick >Home</a>
-               
-                    
-                
                 </div>
         </div>
     )

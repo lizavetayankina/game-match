@@ -10,10 +10,9 @@ const Modal = props => {
             <div className='modal_close' onClick={props.onModalClose}></div>
             <form>
             <label>First name</label>
-            <input type='name' className='form-control'  value
-            ></input>
+            <input type='name' className='form-control'></input>
             <label>Last name</label>
-            <input type='name' className='form-control'  value></input>
+            <input type='name' className='form-control'></input>
             <label>Email</label>
             <input type='email' className='form-control'></input>
             <button className="btn" onClick> Submit </button>
