@@ -3,7 +3,7 @@ import ContentGame from './ContentGame';
 import HeaderGame from './HeaderGame';
 
 export default function Game () {
-    return ( <div >
+    return ( <div className='game'>
         <HeaderGame />
         <ContentGame />
     </div>

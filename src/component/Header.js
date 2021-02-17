@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 export default function Header () {
 
 const [modal, setModal] = useState({modal1:false}) 
+
 return (
 <div className="nav">
 <div className="nav-title">

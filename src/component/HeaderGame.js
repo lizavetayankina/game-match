@@ -1,6 +1,6 @@
 import React from 'react';
- import '../styles/HeaderGame.css';
- import Home from './Home';
+import '../styles/HeaderGame.css';
+import Home from './Home';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
@@ -21,8 +21,8 @@ export default function HeaderGame () {
                 <Router>
                     <Switch>
                         <Route exact path="/Home" component={Home} />
-                        </Switch>
-                        </Router> 
+                    </Switch>
+                </Router> 
         </div>
     )
 }
