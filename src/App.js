@@ -1,17 +1,13 @@
 import React from 'react';
-import Content from './component/Content';
-import Header from './component/Header';
+import Home from './component/Home';
+
 import '../src/styles/App.css';
 
 
 function App() {
   return (
-  <div className="wrapper"> 
-  <Header />
-  <div className="contet-rules">
-  <Content /> 
-  </div> 
-
+  <div> 
+  <Home />
   </div>
   );
 }

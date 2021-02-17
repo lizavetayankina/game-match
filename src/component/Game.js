@@ -4,7 +4,7 @@ import HeaderGame from './HeaderGame';
 
 export default function Game () {
     return ( <div >
-        <HeaderGame />,
+        <HeaderGame />
         <ContentGame />
     </div>
     )

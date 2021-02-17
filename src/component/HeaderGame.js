@@ -1,5 +1,7 @@
 import React from 'react';
  import '../styles/HeaderGame.css';
+ import Home from './Home';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 export default function HeaderGame () {
@@ -13,8 +15,14 @@ export default function HeaderGame () {
                 <button className='btnGame'>Easy</ button>
                 <button className='btnGame'>Media</button>
                 <button className='btnGame'>Hard</button>
-                <a href="#" className="navGame-link link" onClick >Home</a>
+                <a href="Home" className="navGame-link link">Home</a>
                 </div>
+                
+                <Router>
+                    <Switch>
+                        <Route exact path="/Home" component={Home} />
+                        </Switch>
+                        </Router> 
         </div>
     )
 }
