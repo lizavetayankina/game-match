@@ -8,9 +8,9 @@ export default function Content () {
             <div className="rules">
             <h2> Rules the Game </h2>
             <ul>
-            <li>You must to login this game </li>
-            <li>You nees choose level</li>
-            <li>You need match similar pictures on bord. </li>
+            <li key='1'>You must to login this game </li>
+            <li key='2'>You nees choose level</li>
+            <li key='3'>You need match similar pictures on bord. </li>
             </ul>
             </div>
             </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../styles/Header.css';
 import Modal from './Modal';
 import Game from './Game';
-import Home from './Home';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 export default function Header () {
@@ -15,9 +14,9 @@ return (
   <h1>Match-Match Game</h1>
 </div>
 <div className="nav-menu">  
-<a href="Home" className="nav-link">Home</a>
-<a href="Game" className="nav-link">Game</a>
-<a href="#" className="nav-link" onClick={() => setModal({...modal,modal1:true})} >Log in </a>
+<a href="Home" className="nav-link" >Home</a>
+<a href="Game" className="nav-link" >Game</a>
+<a href="#" className="nav-link"  onClick={() => setModal({...modal,modal1:true})} >Log in </a>
 </div>
 
 <Modal isOpened={modal.modal1} 
