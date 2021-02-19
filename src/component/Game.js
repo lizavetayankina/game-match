@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ContentGame from './ContentGame';
+import Board from './Board';
 import  "../styles/Game.css"
 
 
@@ -16,7 +16,7 @@ export default function Game () {
     </div>
     
     <div className='contGame'>  
-    <ContentGame />
+    <Board />
      </div> 
     </div>
     )

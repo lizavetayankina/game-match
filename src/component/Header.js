@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
-import '../styles/HeaderGame.css';
 import Modal from './Modal';
 
 export default function Header () {
