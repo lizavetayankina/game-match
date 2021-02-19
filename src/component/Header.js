@@ -25,7 +25,6 @@ onModalClose={() => setModal({...modal, modal1:false})} />
 <Router>
   <Switch>
     <Route exact path="/Game" component={Game} />
-    <Route exact path="/Home" component={Home} />
   </Switch>
 </Router> 
 </div>

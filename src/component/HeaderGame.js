@@ -17,12 +17,13 @@ export default function HeaderGame () {
                 <button className='btnGame'>Hard</button>
                 <a href="Home" className="navGame-link link">Home</a>
                 </div>
-                
                 <Router>
-                    <Switch>
-                        <Route exact path="/Home" component={Home} />
-                    </Switch>
-                </Router> 
+  <Switch>
+  
+    <Route exact path="/Home" component={Home} />
+  </Switch>
+</Router>    
+                
         </div>
     )
 }
