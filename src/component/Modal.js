@@ -27,7 +27,7 @@ let lastName = React.createRef();
         console.log(userInfo);
     }
 
- 
+
 
     return (
         <div className={`modal_wrapper ${props.isOpened ? 'open' : 'close'}`} >

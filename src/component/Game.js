@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ContentGame from './ContentGame';
+import  "../styles/Game.css"
 
 
 export default function Game () {
@@ -8,13 +9,15 @@ export default function Game () {
     return ( 
     <div className='game'>
      <div className='navGame-menu'>
-                <span className="navGame-link score">Score:{highScore} </span>
-                <button className='btnGame' onClick={() => setOptions(12)}>Easy</ button>
-                <button className='btnGame' onClick={() => setOptions(18)}>Media</button>
-                <button className='btnGame'onClick={() => setOptions(24)}>Hard</button>
+            <span className="navGame-link score">Score:{highScore} </span>
+            <button className='btnGame' onClick={() => setOptions(12)}>Easy</ button>
+            <button className='btnGame' onClick={() => setOptions(18)}>Media</button>
+            <button className='btnGame'onClick={() => setOptions(24)}>Hard</button>
     </div>
+    
+    <div className='contGame'>  
     <ContentGame />
-        
+     </div> 
     </div>
     )
 }

@@ -3,7 +3,6 @@ import '../styles/Header.css';
 import '../styles/HeaderGame.css';
 import Modal from './Modal';
 
-
 export default function Header () {
 
 const [modal, setModal] = useState({modal1:false}) 
