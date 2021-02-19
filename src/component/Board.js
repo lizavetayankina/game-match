@@ -22,7 +22,6 @@ class Board extends React.Component {
       '🎵',
     ]
     const deck = fronts
-      .concat(fronts)
       .sort(() => Math.random() - 0.5)
       .map(f => {
         return {
@@ -64,7 +63,7 @@ class Board extends React.Component {
           this.flipCardTo(this.state.firstCard, false)
           this.flipCardTo(cardIdx, false)
           this.setState({firstCard: null});
-        }, 3000)
+        }, 2000)
       }
     }
 

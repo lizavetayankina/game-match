@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import '../styles/HeaderGame.css';
+import Game from './Game';
 
 
 export default function HeaderGame () {
     const [options, setOptions] = useState(null);
-    const [highScore, setHighScore] = useState(0)
+    const [highScore, setHighScore] = useState(0);
+
+    
+
     return (
         <div className='navGame'>
             <div className='navGame-title'> 
