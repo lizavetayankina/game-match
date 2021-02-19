@@ -78,7 +78,7 @@ class Board extends React.Component {
     
       this.state.deck.map((f, i) => {
         return (
-        <div className="board-board">
+        <div className="board-board" key={i}>
         <div className="Board">
           <Card
             flip={() => {this.flip(i)}}
