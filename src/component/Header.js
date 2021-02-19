@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
+import '../styles/HeaderGame.css';
 import Modal from './Modal';
-import Game from './Game';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+
 
 export default function Header () {
 
@@ -21,11 +21,8 @@ return (
 
 <Modal isOpened={modal.modal1} 
 onModalClose={() => setModal({...modal, modal1:false})} />
-<Router>
-  <Switch>
-    <Route exact path="/Game" component={Game} />
-  </Switch>
-</Router> 
+
+
 </div>
 );
 }
