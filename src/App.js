@@ -3,6 +3,7 @@ import Welcome from './component/Welcome';
 import Game from './component/Game';
 import Content from './component/Content';
 import Header from './component/Header';
+//import Modal from './component/Modal';
 import {BrowserRouter, Route} from "react-router-dom";
 
 import '../src/styles/App.css';
@@ -12,8 +13,7 @@ import Modal from './component/Modal';
 function App() {
   return (
   <div> 
- <Header />,
- <Modal />
+ <Header />
  
   <BrowserRouter>
     <Route exact path="/Game" component={Game} />

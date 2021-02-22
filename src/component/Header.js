@@ -14,10 +14,10 @@ return (
 <div className="nav-menu">  
 <a href="Home" className="nav-link" >Home</a>
 <a href="Game" className="nav-link" >Game</a>
-
+<a href="#" className="nav-link"  onClick={() => setModal({...modal,modal1:true})} >Log in </a>
 </div>
 
-<Modal isOpened={() => setModal({...modal,modal1: true})} 
+<Modal isOpened={modal.modal1} 
 onModalClose={() => setModal({...modal, modal1:false})} />
 </div>
 );
