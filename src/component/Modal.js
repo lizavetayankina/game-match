@@ -7,15 +7,18 @@ const  Modal = props => {
     let lastName = React.createRef();
     let userEmail = React.createRef();
 
+    let users = [];
+
 
     function submit () { 
     let nameUser = firstName.current.value;
     let surname = lastName.current.value;
     let email = userEmail.current.value;
-    let userInfo = {nameUser, surname, email}
-    console.log(userInfo); 
- if (userInfo == "") { alert("Let's go play on game")}}
-      
+    let userInfo = {nameUser, surname, email} 
+    users.push(userInfo);
+    console.log(users);
+    localStorage.setItem('usersGame', JSON.stringify(users));
+ }
 
  return (
         <div className={`modal_wrapper ${props.isOpened ? 'open' : 'close'}`} >
