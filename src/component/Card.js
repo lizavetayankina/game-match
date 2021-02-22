@@ -9,8 +9,6 @@ class Card extends React.Component {
     } else {
       content = ''
     }
-
-    
     return (
       <div onClick={this.props.flip} className={`Card ${this.props.faceUp ? 'face-up': ''}`}>
         {content}

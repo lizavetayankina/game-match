@@ -6,12 +6,14 @@ import Header from './component/Header';
 import {BrowserRouter, Route} from "react-router-dom";
 
 import '../src/styles/App.css';
+import Modal from './component/Modal';
 
 
 function App() {
   return (
   <div> 
- <Header />
+ <Header />,
+ <Modal />
  
   <BrowserRouter>
     <Route exact path="/Game" component={Game} />
