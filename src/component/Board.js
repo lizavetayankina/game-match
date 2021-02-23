@@ -21,6 +21,7 @@ class Board extends React.Component {
       'ღ',
       '🎵',
     ]
+    
     const deck = fronts
       .concat(fronts)
       .sort(() => Math.random() - 0.5)
@@ -33,6 +34,7 @@ class Board extends React.Component {
     this.state = {
       deck: deck,
       firstCard: null,
+      level: null,
     }
   }
 
@@ -58,23 +60,28 @@ class Board extends React.Component {
       const firstCardContent = this.state.deck[this.state.firstCard].content;
       const secondCardContent = this.state.deck[cardIdx].content;
       if(firstCardContent === secondCardContent) {
-        this.setState({firstCard: null});
+        this.setState({firstCard: null}
+          );
       } else {
         setTimeout(() => {
           this.flipCardTo(this.state.firstCard, false)
           this.flipCardTo(cardIdx, false)
           this.setState({firstCard: null});
-        }, 3000)
+        }, 2000)
       }
     }
 
     this.flipCardTo(cardIdx, !this.state.deck[cardIdx].faceUp)
   }
+  
+
+
 
   render () {
     
     console.log(this.state.firstCard);
     return (
+      
     
       this.state.deck.map((f, i) => {
         return (
