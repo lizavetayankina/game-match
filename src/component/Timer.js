@@ -1,24 +1,47 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import "../styles/Timer.css";
-import Game from './Game';
 
-const Timer  = () => {
-    const [timerHours, setTimer] = useState('00');
-    const [timerMinuts, setMinuts] = useState('00');
-   
-return (
- <section className='timer-counter' > 
- <section  className='timer'>
-<section> 
-<p>{timerHours} <span>:</span></p>
-</section>
+class Timer extends React.Component {
+    constructor(props) {
+      super(props);
+      this.timer = null;
+      this.state = {
+          minutes: 0,
+          seconds: 0,
+    };
+    }
   
- <section>
- <p>{timerMinuts} </p>
- </section>
- </section>
- </section>
-)
-}
+    componentDidMount() {
+      this.timerID = setInterval(
+        () => this.tick(),
+        1000
+      );
+    }
+    tick() {
+        this.setState( {
+          minutes: this.state.minutes + 1,
+          seconds: this.state.seconds + 1,
+        });
+      }
+    
+    componentWillUnmount() {
+      clearInterval(this.timerID);
+    }
+  
+    
+    render() {
+      return (
+        <div className="timer-counter">
+          <div className="timer">
+          <p>{this.state.minutes}:</p>
+          <p>{this.state.seconds}</p>
+          </div>
+        </div>
+      );
+    }
+  }
+  
 
-export default Timer;
+  export default Timer;
+  
