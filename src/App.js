@@ -7,10 +7,9 @@ import {BrowserRouter, Route} from "react-router-dom";
 import '../src/styles/App.css';
 
 
-
 function App() {
   return (
-  <div> 
+  <div>
  <Header />
   <BrowserRouter>
     <Route exact path="/Game" component={Game} />

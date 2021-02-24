@@ -1,14 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import "../styles/Timer.css";
 
 class Timer extends React.Component {
     constructor(props) {
       super(props);
-      this.timer = null;
       this.state = {
-          minutes: 0,
-          seconds: 0,
+        timer: null,
+        minutes: 0,
+        seconds: 0,
     };
     }
   
@@ -18,18 +17,17 @@ class Timer extends React.Component {
         1000
       );
     }
-    tick() {
-        this.setState( {
-          minutes: this.state.minutes + 1,
-          seconds: this.state.seconds + 1,
-        });
-      }
+    tick() { 
+        this.setState({
+        seconds: this.state.seconds + 1,
+       minutes: this.state.minutes + 1
+      });
+    }
     
     componentWillUnmount() {
       clearInterval(this.timerID);
     }
   
-    
     render() {
       return (
         <div className="timer-counter">
@@ -42,6 +40,5 @@ class Timer extends React.Component {
     }
   }
   
-
   export default Timer;
   
