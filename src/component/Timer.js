@@ -43,9 +43,10 @@ class Timer extends React.Component {
     render() {
       return (
         <div className="timer-counter">
-          <div className="timer">
-          <p>{this.state.hours}:</p>
-          <p>{this.state.minutes}:</p>
+          <div className="timer"> 
+          <div className='icon-clock'><i className="far fa-clock"></i></div>
+          <p>{this.state.hours}<span>:</span></p>
+          <p>{this.state.minutes}<span>:</span></p>
           <p>{this.state.seconds}</p>
           </div>
         </div>

@@ -1,8 +1,9 @@
 .contGame {
 margin: auto;
-width: 800px;
-    
+width: 800px;  
 }
+
+
 
 .navGame { color: aqua;
 max-width: 800px;
@@ -13,8 +14,9 @@ margin: auto;}
 
 .navGame-menu {
 display: flex;
-margin: auto;
+padding-bottom: 20px;
 width: 700px;
+margin: auto;
 }
 
 .navGame-link {
