@@ -1,0 +1,51 @@
+.contGame {
+margin: auto;
+width: 800px;  
+}
+
+.navGame { color: aqua;
+max-width: 800px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: auto;}
+
+.navGame-menu {
+display: flex;
+padding-bottom: 20px;
+width: 700px;
+margin: auto;
+}
+
+.navGame-link {
+text-decoration: none;
+line-height: 27px;
+align-items: center;
+vertical-align: top;
+display: inline-block;
+cursor: pointer;
+padding: 10px;
+color: #fff;
+font-family: 'Poppins', 'sans-serif';
+font-size: 20px;
+}
+
+.link:hover {
+transition: all 0.3s;
+opacity: .5;
+}
+            
+.btnGame {
+background-color: transparent;
+color: #fff;
+border: none;
+font-family: 'Poppins', 'sans-serif';
+font-size: 20px;
+outline: none;
+cursor: pointer;
+}
+            
+.btnGame:hover{
+transition: all 0.3s;
+opacity: .5;
+}
