@@ -1,4 +1,4 @@
-export const SET_TIME = 'SET_TIME';
+/*export const SET_TIME = 'SET_TIME';
 export const CLEAR_TIME = 'CLEAR_TIME';
 
 export function setTime() {
@@ -12,4 +12,4 @@ export function clearTime() {
     return {
         type: CLEAR_TIME,
     };
-}
+}*/

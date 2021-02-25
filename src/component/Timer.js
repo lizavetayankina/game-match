@@ -8,20 +8,32 @@ class Timer extends React.Component {
         timer: null,
         minutes: 0,
         seconds: 0,
+        hours: 0,
     };
     }
   
     componentDidMount() {
       this.timerID = setInterval(
         () => this.tick(),
-        1000
+        800
       );
     }
-    tick() { 
+    tick() { if (this.state.seconds >= 10) {
+      this.setState({
+        minutes: this.state.minutes + 1,
+        seconds: 0,
+      })
+
+      if(this.state.minutes >= 10 ) {
         this.setState({
-        seconds: this.state.seconds + 1,
-       minutes: this.state.minutes + 1
-      });
+          hours: this.state.hours + 1,
+          minutes: 0,
+        })
+      }
+    }
+        this.setState({
+        seconds: this.state.seconds + 1,}
+      );
     }
     
     componentWillUnmount() {
@@ -32,6 +44,7 @@ class Timer extends React.Component {
       return (
         <div className="timer-counter">
           <div className="timer">
+          <p>{this.state.hours}:</p>
           <p>{this.state.minutes}:</p>
           <p>{this.state.seconds}</p>
           </div>
@@ -39,6 +52,6 @@ class Timer extends React.Component {
       );
     }
   }
-  
+ 
   export default Timer;
   

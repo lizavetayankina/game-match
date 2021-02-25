@@ -25,4 +25,4 @@ function TimerConteiner() {
     );
 }
 
-export default TimerConteiner;*/
+export default React.memo(TimerConteiner);*/

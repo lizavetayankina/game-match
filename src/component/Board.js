@@ -75,13 +75,10 @@ class Board extends React.Component {
   }
   
 
-
-
   render () {
     
     console.log(this.state.firstCard);
     return (
-      
     
       this.state.deck.map((f, i) => {
         return (
