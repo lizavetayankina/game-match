@@ -3,8 +3,6 @@ margin: auto;
 width: 800px;  
 }
 
-
-
 .navGame { color: aqua;
 max-width: 800px;
 display: flex;
@@ -35,11 +33,6 @@ font-size: 20px;
 .link:hover {
 transition: all 0.3s;
 opacity: .5;
-}
-            
-.score {
-padding-right: 60px;
-cursor: default;
 }
             
 .btnGame {
