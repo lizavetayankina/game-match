@@ -21,6 +21,7 @@ class Board extends React.Component {
       'ღ',
       '🎵',
     ]
+
     
     const deck = fronts
       .concat(fronts)
@@ -29,13 +30,15 @@ class Board extends React.Component {
         return {
           content: f,
           faceUp: false,
+          showEndGame: false,
         }
       })
     this.state = {
       deck: deck,
       firstCard: null,
       level: null,
-    }
+      score: 0,
+    } 
   }
 
   flipCardTo(cardIdx, faceUp) {
@@ -60,24 +63,30 @@ class Board extends React.Component {
       const firstCardContent = this.state.deck[this.state.firstCard].content;
       const secondCardContent = this.state.deck[cardIdx].content;
       if(firstCardContent === secondCardContent) {
-        this.setState({firstCard: null}
+        this.setState({ score: this.state.score + 1,
+          firstCard: null,
+       }, 
+
           );
       } else {
         setTimeout(() => {
           this.flipCardTo(this.state.firstCard, false)
           this.flipCardTo(cardIdx, false)
           this.setState({firstCard: null});
-        }, 2000)
+        }, 1000)
       }
     }
-
+console.log('score',this.state.score);
     this.flipCardTo(cardIdx, !this.state.deck[cardIdx].faceUp)
   }
-  
 
   render () {
+
+    console.log("one card",this.state.firstCard);
+    if(this.state.score == 13) {
+      alert("game over");
+    };
     
-    console.log(this.state.firstCard);
     return (
     
       this.state.deck.map((f, i) => {
@@ -87,10 +96,12 @@ class Board extends React.Component {
           <Card
             flip={() => {this.flip(i)}}
             content={f.content}
-            faceUp={f.faceUp} />
+            faceUp={f.faceUp} />   
         </div>
-        </div>)
-      })
+        </div>
+        )
+      }
+      )
     )
   }
 }
