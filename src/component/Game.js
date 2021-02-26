@@ -9,10 +9,7 @@ export default function Game (props) {
     return (   
  <div className='game'>
      <div className='navGame-menu'>
-
-     <p className='gameScore'>Score: {this.props.score}</p>
    <Timer />  
-            
             <button className='btnGame' onClick={() => setOptions(12)}>Easy</ button>
             <button className='btnGame' onClick={() => setOptions(18)}>Media</button>
             <button className='btnGame'onClick={() => setOptions(24)}>Hard</button>

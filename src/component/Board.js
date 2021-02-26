@@ -1,19 +1,18 @@
 import React  from 'react';
 import Card from './Card';
 import  '../styles/Board.css';
-
+import GameEnd from './GameEnd';
+import Home from './Home';
+import {BrowserRouter, Route} from "react-router-dom";
 
 class Board extends React.Component {
   constructor(props) {
     super(props)
     const fronts = [
       '💩',
-      '👹',
       '👿',
-      '☃',
       '🚗',
       '🚲',
-      '♖',
       '☺',
       '♒',
       '✿',
@@ -76,19 +75,19 @@ class Board extends React.Component {
         }, 1000)
       }
     }
-console.log('score',this.state.score);
+
     this.flipCardTo(cardIdx, !this.state.deck[cardIdx].faceUp)
   }
 
   render () {
-
     console.log("one card",this.state.firstCard);
-    if(this.state.score == 13) {
-      alert("game over");
+    console.log('score', this.state.score);
+
+    if(this.state.score == 2) {
+     alert("game over");
     };
     
     return (
-    
       this.state.deck.map((f, i) => {
         return (
         <div className="board-board" key={i}>
