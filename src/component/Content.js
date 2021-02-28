@@ -9,7 +9,7 @@ export default function Content () {
             <h2> Rules the Game </h2>
             <ul>
             <li>You must to login this game </li>
-            <li>You nees choose level</li>
+            <li>You need choose level</li>
             <li>You need match similar pictures on bord. </li>
             </ul>
             </div>

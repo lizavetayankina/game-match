@@ -15,7 +15,7 @@ class Timer extends React.Component {
     componentDidMount() {
       this.timerID = setInterval(
         () => this.tick(),
-        800
+        1000
       );
     }
     tick() { if (this.state.seconds >= 10) {
