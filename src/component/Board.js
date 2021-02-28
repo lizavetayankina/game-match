@@ -83,7 +83,7 @@ class Board extends React.Component {
     console.log("one card",this.state.firstCard);
     console.log('score', this.state.score);
 
-    if(this.state.score == 2) {
+    if(this.state.score == 10) {
      alert("game over");
     };
     
